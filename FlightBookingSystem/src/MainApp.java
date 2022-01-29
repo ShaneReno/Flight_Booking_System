@@ -9,6 +9,8 @@ public class MainApp {
 
 	public static void main(String[] args) throws SQLException {
 		
+		driverConnector sql = new driverConnector();
+		
 		
 		Scanner departureInput = new Scanner(System.in);
 		Scanner destinationInput = new Scanner(System.in);
@@ -23,26 +25,11 @@ public class MainApp {
 		String destinationCountry = destinationInput.next();
 		
 		
-		try {
-			//get connection
-			Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightbooking", "root", "Lockdown21!!");
-			//Create statement
-			Statement myStmt = myConn.createStatement();
-			//Execute SQL Query
-			ResultSet myRs = myStmt.executeQuery("select * from flights where departure_country ='"+departureCountry+"' and destination_country = '"+destinationCountry+"'");
-			//Process result set
-			while (myRs.next()) {
-				System.out.println("Flight Number: " + myRs.getString("flight_no") + " FROM " + myRs.getString("departure_country") +  " TO " + myRs.getString("destination_country")
-									+ " ON " + myRs.getString("departure_date") + " WITH AIRLINE: " + myRs.getString("airline") + " COSTING €" + myRs.getString("cost_in_euro"));
-				
-			}
-		}
-		catch (Exception exc){
-			exc.printStackTrace();
-			
-		}
+		sql.getQuery(departureCountry, destinationCountry);
 		
 		
+		
+	
 		departureInput.close();
 	
 		
