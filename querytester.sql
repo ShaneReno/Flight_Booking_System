@@ -1,0 +1,1 @@
+SELECT * FROM flights WHERE departure_country = "france" and destination_country = "China";
