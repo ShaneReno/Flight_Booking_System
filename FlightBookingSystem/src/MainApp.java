@@ -1,13 +1,8 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Scanner;
 
 public class MainApp {
 
-	public static void main(String[] args) throws SQLException {
+	public static void main(String[] args){
 		
 		driverConnector sql = new driverConnector();
 		
@@ -31,7 +26,7 @@ public class MainApp {
 		
 	
 		departureInput.close();
-	
+		destinationInput.close();
 		
 
 	}
