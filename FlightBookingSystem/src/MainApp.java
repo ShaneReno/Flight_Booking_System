@@ -34,8 +34,12 @@ public class MainApp {
 
 				System.out.println("Enter your destination country: ");
 				String destinationCountry = destinationInput.next();
-
+				System.out.println("Please enter the flight number you wish to purchase: ");
 				sql.getQuery(departureCountry, destinationCountry);
+				System.out.println("Please enter the flight number you wish to purchase: ");
+				String flightNo = userInput.next();
+				sql.getFlightBooking(flightNo);
+				
 				break;
 			case 3:
 				System.out.println("YET TO BE IMPLEMENTED");
