@@ -23,7 +23,7 @@ public class MainApp {
 
 			switch (userChoice) {
 			case 1:
-				System.out.println("YET TO BE IMPLEMENTED");
+				sql.getAllFlights();
 				break;
 			case 2:
 				System.out.println("Please enter your departing and destination countries of choice.");
