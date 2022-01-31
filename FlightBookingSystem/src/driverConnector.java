@@ -10,7 +10,7 @@ public class driverConnector {
 	
 	try {
 		//Establish connection - This uses the basic root name and a unique password
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightbooking", "root", "Lockdown21!!");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightbooking", "root", "datahouse");
 		//Create statement
 		Statement myStmt = myConn.createStatement();
 		//Execute SQL Query
@@ -22,7 +22,7 @@ public class driverConnector {
 			String outputter = "Flight Number: " + myRs.getString("flight_no") + " FROM " + myRs.getString("departure_country")
 								+  " TO " + myRs.getString("destination_country") + " ON " + myRs.getString("departure_date") 
 								+ " AT " + myRs.getString("departure_time").substring(0, myRs.getString("departure_time").length() - 3) 
-								+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING €" + myRs.getString("cost_in_euro");
+								+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING ï¿½" + myRs.getString("cost_in_euro");
 			
 			//Print this out
 			System.out.println(outputter);
