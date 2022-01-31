@@ -34,7 +34,7 @@ public class driverConnector {
 						+ myRs.getString("departure_country") + " TO " + myRs.getString("destination_country") + " ON "
 						+ myRs.getString("departure_date") + " AT "
 						+ myRs.getString("departure_time").substring(0, myRs.getString("departure_time").length() - 3)
-						+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING €" + myRs.getString("cost_in_euro");
+						+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING " + myRs.getString("cost_in_euro") + " Euro.";
 				System.out.println(outputter);
 			}
 
@@ -69,7 +69,7 @@ public class driverConnector {
 						+ myRs.getString("departure_country") + " TO " + myRs.getString("destination_country") + " ON "
 						+ myRs.getString("departure_date") + " AT "
 						+ myRs.getString("departure_time").substring(0, myRs.getString("departure_time").length() - 3)
-						+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING €" + myRs.getString("cost_in_euro");
+						+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING ï¿½" + myRs.getString("cost_in_euro");
 				System.out.println(outputter);
 			}
 
