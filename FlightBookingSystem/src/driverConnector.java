@@ -106,9 +106,9 @@ public class driverConnector {
 						+ myRs.getString("departure_country") + " TO " + myRs.getString("destination_country") + " ON "
 						+ myRs.getString("departure_date") + " AT "
 						+ myRs.getString("departure_time").substring(0, myRs.getString("departure_time").length() - 3)
-						+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING"
+						+ " WITH AIRLINE: " + myRs.getString("airline") + " COSTING "
 						+ myRs.getString("cost_in_euro");
-				System.out.println("Would you like to book this flight: " + outputter);
+				System.out.println("Would you like to book this flight: " + outputter + " ?");
 			}
 
 		} catch (

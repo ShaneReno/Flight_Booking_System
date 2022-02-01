@@ -26,6 +26,7 @@ public class MainApp {
 				sql.getAllFlights();
 				break;
 			case 2:
+				System.out.println("TEST");
 				System.out.println("Please enter your departing and destination countries of choice.");
 				System.out.println("Subject to availability!");
 				System.out.println("");
@@ -34,11 +35,13 @@ public class MainApp {
 
 				System.out.println("Enter your destination country: ");
 				String destinationCountry = destinationInput.next();
-				System.out.println("Please enter the flight number you wish to purchase: ");
+			
 				sql.getQuery(departureCountry, destinationCountry);
 				System.out.println("Please enter the flight number you wish to purchase: ");
 				String flightNo = userInput.next();
 				sql.getFlightBooking(flightNo);
+				//if yes, create object or entry in arraylist for account booking.
+				//TO DO
 				
 				break;
 			case 3:
