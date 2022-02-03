@@ -1,3 +1,5 @@
+//MAIN APPLICATION FILE
+
 package com.example.flightbookingsystem;
 
 import javafx.application.Application;

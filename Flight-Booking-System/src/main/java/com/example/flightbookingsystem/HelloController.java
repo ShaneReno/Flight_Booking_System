@@ -1,5 +1,6 @@
-package com.example.flightbookingsystem;
+//This controller file controls action events. It integrates the SQL database into the table.
 
+package com.example.flightbookingsystem;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

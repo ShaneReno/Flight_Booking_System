@@ -1,3 +1,4 @@
+//This class implements the attributes of the SQL flights table into an object using a constructor
 package com.example.flightbookingsystem;
 
 public class ModelTable {

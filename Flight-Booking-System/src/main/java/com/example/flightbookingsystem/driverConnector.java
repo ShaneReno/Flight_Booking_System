@@ -1,3 +1,5 @@
+//Iterates through the SQL attributes in the flights database once connected using the root connection
+
 package com.example.flightbookingsystem;
 import java.sql.*;
 
