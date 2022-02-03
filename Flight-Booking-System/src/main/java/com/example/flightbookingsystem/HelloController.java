@@ -1,6 +1,7 @@
 //This controller file controls action events. It integrates the SQL database into the table.
 
 package com.example.flightbookingsystem;
+import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -23,7 +24,9 @@ public class HelloController implements Initializable {
 
 
     public void viewAllFlightsBTN(ActionEvent e){
+
         sql.getAllFlights();
+
     }
 
 

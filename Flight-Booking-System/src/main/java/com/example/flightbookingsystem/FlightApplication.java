@@ -8,6 +8,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,9 +19,10 @@ public class FlightApplication extends Application implements EventHandler<Actio
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FlightApplication.class.getResource("hello-view.fxml"));
 
-        Scene scene = new Scene(fxmlLoader.load(), 700, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 1024, 768);
         stage.setTitle("FlySpy Travel Agency");
         stage.setScene(scene);
+        stage.getIcons().add(new Image("file:planeFav.png"));
         stage.show();
     }
 
