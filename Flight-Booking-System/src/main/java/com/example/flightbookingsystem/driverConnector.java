@@ -1,11 +1,15 @@
-package Flight;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+package com.example.flightbookingsystem;
+import java.sql.*;
 
 public class driverConnector {
-	
+
+	public static Connection getConnection() throws SQLException{
+		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/flightbooking", "root",
+				"datahouse");
+
+		return connection;
+	}
+
 	
 	public String getAllFlights() {
 
